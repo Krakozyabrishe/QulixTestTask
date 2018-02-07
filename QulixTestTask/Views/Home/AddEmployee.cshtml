@@ -1,0 +1,13 @@
+﻿@model QulixTestTask.Models.Employee
+
+@using (Html.BeginForm())
+{
+    <p>Идентификатор - N/A</p>
+    <p>Фамилия - @Html.TextBoxFor(x => x.LastName)</p>
+    <p>Имя - @Html.TextBoxFor(x => x.FirstName)</p>
+    <p>Отчество - @Html.TextBoxFor(x => x.Patronymic)</p>
+    <p>Дата приема на работу - @Html.TextBoxFor(x => x.RecruitmentDate)</p>
+    <p>Должность - @Html.TextBoxFor(x => x.Position)</p>
+    <p>Компания - @Html.TextBoxFor(x => x.Company)</p>
+    <input type="submit" value="Добавить" />
+}

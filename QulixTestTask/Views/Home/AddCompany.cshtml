@@ -1,0 +1,10 @@
+﻿@model QulixTestTask.Models.Company
+
+@using (Html.BeginForm())
+{
+    <p>Идентификатор - N/A</p>
+    <p>Наименование - @Html.TextBoxFor(x => x.CompanyName)</p>
+    <p>Размер кмпании - @Html.TextBoxFor(x => x.People)</p>
+    <p>Организационно-правовая форма - @Html.TextBoxFor(x => x.CompanyType)</p>
+    <input type="submit" value="Добавить" />
+}

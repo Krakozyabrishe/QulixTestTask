@@ -1,0 +1,55 @@
+﻿@model IEnumerable<QulixTestTask.Models.Employee>
+
+<table class="table">
+    <tr>
+        <th>
+            ИД
+        </th>
+        <th>
+            Фамилия
+        </th>
+        <th>
+            Имя
+        </th>
+        <th>
+            Отчество
+        </th>
+        <th>
+            Дата приема
+        </th>
+        <th>
+            Должность
+        </th>
+        <th>
+            Кмпания
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(x => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(x => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(x => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(x => item.Patronymic)
+        </td>
+        <td>
+            @Html.DisplayFor(x => item.RecruitmentDate)
+        </td>
+        <td>
+            @Html.DisplayFor(x => item.Position)
+        </td>
+        <td>
+            @Html.DisplayFor(x => item.Company)
+        </td>
+    </tr>
+}
+
+</table>
